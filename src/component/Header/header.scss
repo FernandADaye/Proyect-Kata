@@ -1,0 +1,54 @@
+
+@mixin general{
+    background-color: rgb(199, 197, 197);
+    margin: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    color: rgb(70, 69, 69);
+    font-size: small;
+    letter-spacing: 2px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+@mixin select{
+    color: rgb(31, 34, 36);
+border: solid  rgb(128, 126, 126) 1px;
+border-radius: 30px;
+text-decoration: none;
+padding: 10px;
+margin: 0;
+background-color: rgb(128, 126, 126);
+box-shadow: 1px 0px 10px #0c0c0c86 ;
+}
+.header{
+    @include general();
+    &__nav-logo{
+        @include general()
+    }
+    &__nav-lista{
+        @include general()
+    }
+    &__nav-lista-elemento{
+        @include general()
+    }
+    &__lista-elemento-a{
+        @include general()
+    }
+}
+.header__lista-elemento-a-selected{
+    @include select
+}
+
+
+
+
+
+
+
+
+
